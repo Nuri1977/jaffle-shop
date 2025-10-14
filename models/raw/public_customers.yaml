@@ -1,0 +1,26 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: customers
+    columns:
+    - name: customer_id
+      data_tests: []
+    - name: customer_name
+      data_tests: []
+    - name: count_lifetime_orders
+      data_tests: []
+    - name: first_ordered_at
+      data_tests: []
+    - name: last_ordered_at
+      data_tests: []
+    - name: lifetime_spend_pretax
+      data_tests: []
+    - name: lifetime_tax_paid
+      data_tests: []
+    - name: lifetime_spend
+      data_tests: []
+    - name: customer_type
+      data_tests: []

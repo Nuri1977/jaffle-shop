@@ -1,0 +1,44 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: orders
+    columns:
+    - name: order_id
+      data_tests: []
+    - name: location_id
+      data_tests: []
+    - name: customer_id
+      data_tests: []
+    - name: subtotal_cents
+      data_tests: []
+    - name: tax_paid_cents
+      data_tests: []
+    - name: order_total_cents
+      data_tests: []
+    - name: subtotal
+      data_tests: []
+    - name: tax_paid
+      data_tests: []
+    - name: order_total
+      data_tests: []
+    - name: ordered_at
+      data_tests: []
+    - name: order_cost
+      data_tests: []
+    - name: order_items_subtotal
+      data_tests: []
+    - name: count_food_items
+      data_tests: []
+    - name: count_drink_items
+      data_tests: []
+    - name: count_order_items
+      data_tests: []
+    - name: is_food_order
+      data_tests: []
+    - name: is_drink_order
+      data_tests: []
+    - name: customer_order_number
+      data_tests: []

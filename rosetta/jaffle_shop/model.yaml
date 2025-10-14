@@ -1,0 +1,1005 @@
+---
+safeMode: false
+tables:
+- name: "customers"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "customer_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "count_lifetime_orders"
+    typeName: "int8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 19
+    scale: 0
+    precision: 19
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "first_ordered_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "last_ordered_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "lifetime_spend_pretax"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "lifetime_tax_paid"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "lifetime_spend"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_type"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "locations"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "location_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "location_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_rate"
+    typeName: "float8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 17
+    scale: 17
+    precision: 17
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "opened_date"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "metricflow_time_spine"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "date_day"
+    typeName: "date"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 13
+    scale: 0
+    precision: 13
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "order_items"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "order_item_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "ordered_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_price"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_food_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_drink_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_cost"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "orders"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "order_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "location_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "subtotal_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_paid_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_total_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "subtotal"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_paid"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_total"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "ordered_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_cost"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_items_subtotal"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "count_food_items"
+    typeName: "int8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 19
+    scale: 0
+    precision: 19
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "count_drink_items"
+    typeName: "int8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 19
+    scale: 0
+    precision: 19
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "count_order_items"
+    typeName: "int8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 19
+    scale: 0
+    precision: 19
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_food_order"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_drink_order"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_order_number"
+    typeName: "int8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 19
+    scale: 0
+    precision: 19
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "products"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_type"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_description"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_price"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_food_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_drink_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "supplies"
+  type: "TABLE"
+  schema: "public"
+  columns:
+  - name: "supply_uuid"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_cost"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_perishable_supply"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+views:
+- name: "stg_customers"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "customer_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "stg_locations"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "location_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "location_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_rate"
+    typeName: "float8"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 17
+    scale: 17
+    precision: 17
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "opened_date"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "stg_order_items"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "order_item_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "stg_orders"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "order_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "location_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "customer_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "subtotal_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_paid_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_total_cents"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "subtotal"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "tax_paid"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "order_total"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "ordered_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "stg_products"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_type"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_description"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_price"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_food_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_drink_item"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+- name: "stg_supplies"
+  type: "VIEW"
+  schema: "public"
+  columns:
+  - name: "supply_uuid"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "product_id"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_name"
+    typeName: "text"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 2147483647
+    scale: 0
+    precision: 2147483647
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "supply_cost"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 131089
+    scale: 0
+    precision: 131089
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "is_perishable_supply"
+    typeName: "bool"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1
+    scale: 0
+    precision: 1
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+databaseProductName: "PostgreSQL"
+databaseType: "postgres"
+operationLevel: "schema"

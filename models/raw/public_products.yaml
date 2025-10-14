@@ -1,0 +1,22 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: products
+    columns:
+    - name: product_id
+      data_tests: []
+    - name: product_name
+      data_tests: []
+    - name: product_type
+      data_tests: []
+    - name: product_description
+      data_tests: []
+    - name: product_price
+      data_tests: []
+    - name: is_food_item
+      data_tests: []
+    - name: is_drink_item
+      data_tests: []

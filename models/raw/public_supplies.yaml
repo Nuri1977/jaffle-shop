@@ -1,0 +1,20 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: supplies
+    columns:
+    - name: supply_uuid
+      data_tests: []
+    - name: supply_id
+      data_tests: []
+    - name: product_id
+      data_tests: []
+    - name: supply_name
+      data_tests: []
+    - name: supply_cost
+      data_tests: []
+    - name: is_perishable_supply
+      data_tests: []

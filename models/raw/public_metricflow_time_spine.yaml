@@ -1,0 +1,10 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: metricflow_time_spine
+    columns:
+    - name: date_day
+      data_tests: []

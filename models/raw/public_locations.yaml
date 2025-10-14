@@ -1,0 +1,16 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: locations
+    columns:
+    - name: location_id
+      data_tests: []
+    - name: location_name
+      data_tests: []
+    - name: tax_rate
+      data_tests: []
+    - name: opened_date
+      data_tests: []

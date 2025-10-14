@@ -1,0 +1,26 @@
+---
+version: 2
+sources:
+- name: public
+  description: postgres
+  tables:
+  - name: order_items
+    columns:
+    - name: order_item_id
+      data_tests: []
+    - name: order_id
+      data_tests: []
+    - name: product_id
+      data_tests: []
+    - name: ordered_at
+      data_tests: []
+    - name: product_name
+      data_tests: []
+    - name: product_price
+      data_tests: []
+    - name: is_food_item
+      data_tests: []
+    - name: is_drink_item
+      data_tests: []
+    - name: supply_cost
+      data_tests: []
